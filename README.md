@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## About the API
+
+My first api in Laravel to create, update, delete and get posts that contain only title and content.
+Credits to EspecializaTi.
+
+## How to run
+
+I run this project with Laradock follow this steps:
+- git clone https://github.com/laradock/laradock.git
+- docker-compose up -d nginx mysql phpmyadmin
+- docker-compose exec --user=laradock workspace bash
+- create your database on phpMyAdmin and config the .env file
+- php artisan migrate
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
