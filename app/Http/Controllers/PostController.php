@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        $posts = Post::paginate(1);
+        $posts = Post::latest()->paginate(5);
         return view('admin/posts/index', compact('posts'));
     }
 
