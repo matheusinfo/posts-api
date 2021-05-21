@@ -1,4 +1,4 @@
-<h1>Cadastrar novo post</h1>
+<h1>Editar o post</h1>
 
 @if ($errors->any())
     <div>
@@ -10,11 +10,12 @@
     </div>
 @endif
 
-<form action="{{ route('posts.store') }}" method="post">
+<form action="{{ route('posts.update', $post->id) }}" method="post">
     @csrf
-    <input type="text" name="title" id="title" placeholder="Titulo" value="{{ old('title') }}"/>
+    @method('PUT')
+    <input type="text" name="title" id="title" placeholder="Titulo" value="{{ $post->title }}"/>
     <textarea type="text" name="content" id="content" cols="30" rows="4" placeholder="Conteúdo">
-        {{ old('content') }}
+        {{ $post->content }}
     </textarea>
     <button type="submit">Enviar</button>
 </form>
