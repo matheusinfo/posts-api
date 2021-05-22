@@ -12,7 +12,7 @@
 My first api in Laravel to create, update, delete and get posts that contain only title and content.
 Credits to EspecializaTi.
 
-## How to run
+## How to the api
 
 I run this project with Laradock follow this steps:
 - git clone https://github.com/laradock/laradock.git
